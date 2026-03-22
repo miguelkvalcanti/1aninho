@@ -2,46 +2,81 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Aniversário 🎉</title>
+    <title>Fazendinha do Miguel 🎂</title>
 
-    <!-- Redireciona após segundos -->
-    <meta http-equiv="refresh" content="10; url=https://www.instagram.com/stories/highlights/18088859653901848/?utm_source=qr">
+    <!-- Redireciona após 5 segundos -->
+    <meta http-equiv="refresh" content="5; url=https://www.instagram.com/stories/highlights/18088859653901848/?utm_source=qr">
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #fdf6f0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(#a8e6ff, #e8f8ff);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            text-align: center;
         }
 
-        .container {
-            background: white;
+        .card {
+            background: #ffffff;
             padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            max-width: 350px;
         }
 
         h1 {
-            color: #ff6b6b;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ff7043;
+            margin-top: 0;
         }
 
         p {
             color: #555;
+            font-size: 16px;
+        }
+
+        .emoji {
+            font-size: 28px;
+        }
+
+        .contador {
+            font-weight: bold;
+            color: #ff7043;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎉 Aniversário do Miguel 🎂</h1>
-        <p>Divirta-se!</p>
-        <p>Brinque muito!</p>
-        <p>Não vá embora sem antes tirar uma foto com a gente!</p>
-        <p>Você será redirecionado em instantes 💛</p>
-    </div>
+
+<div class="card">
+    <div class="emoji">🐄🐖🐔🌽</div>
+
+    <h1>Fazendinha do Miguel</h1>
+    <h2>1 aninho 🎂</h2>
+
+    <p>Não vá embora sem antes tirar uma foto com a gente! 💛</p>
+    <p>Fizemos tudo com carinho...</p>
+
+    <p>Redirecionando em <span class="contador" id="count">5</span> segundos ⏳</p>
+</div>
+
+<script>
+    let tempo = 5;
+    const contador = document.getElementById("count");
+
+    setInterval(() => {
+        tempo--;
+        if (tempo >= 0) {
+            contador.innerText = tempo;
+        }
+    }, 1000);
+</script>
+
 </body>
 </html>
