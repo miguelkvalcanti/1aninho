@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <title>Fazendinha do Miguel 🎂</title>
 
-    <!-- Redireciona após 5 segundos -->
-    <meta http-equiv="refresh" content="5; url=https://www.instagram.com/stories/highlights/18088859653901848/?utm_source=qr">
+    <!-- Redireciona após 3 segundos -->
+    <meta http-equiv="refresh" content="3; url=https://www.instagram.com/stories/highlights/18088859653901848/?utm_source=qr">
 
     <style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(#a8e6ff, #e8f8ff);
+            
+            background: 
+                    linear-gradient(rgba(168, 230, 255, 0.5), rgba(232, 248, 255, 0.5)),
+                            url('minguel1ano.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,13 +69,12 @@
     <h2>1 aninho 🎂</h2>
 
     <p>Não vá embora sem antes tirar uma foto com a gente! 💛</p>
-    <p>Fizemos tudo com carinho...</p>
 
-    <p>Redirecionando em <span class="contador" id="count">5</span> segundos ⏳</p>
+    <p>Redirecionando em <span class="contador" id="count">3</span> segundos ⏳</p>
 </div>
 
 <script>
-    let tempo = 5;
+    let tempo = 3;
     const contador = document.getElementById("count");
 
     setInterval(() => {
